@@ -1,0 +1,1 @@
+<h1> galeria conten <?php echo $qt ?></h1>
