@@ -49,11 +49,12 @@ Class Core {
 
 		call_user_func_array(array($c, $currentAction), $params);
 
-
+		/*
 		echo '<hr/>';
 		echo "CONTROLLER: ".$currentController."<br/>";
 		echo "Action: ".$currentAction."<br/>";
 		echo "PARAMS: ".print_r($params, true)."<br/>";
+		*/
 	}
 }
 
