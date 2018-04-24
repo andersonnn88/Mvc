@@ -6,7 +6,7 @@ $config = array();
 
 if(ENVIRONMENT == 'development'){
 	define("BASE_URL", "http://localhost/mvc5/");
-	$config['dbname'] = 'twitter';
+	$config['dbname'] = 'Hoje';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';

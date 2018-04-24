@@ -1,12 +1,22 @@
 <?php
 
-class Anuncios {
+class Anuncios  extends model{
 
 	public function getQuantidade(){
-		$n = 8;
+		
+		$sql = "SELECT COUNT(*) AS c FROM usuarios";
+		$sql = $this->db->query($sql);
 
+		if($sql->rowCount() > 0 ){
 
-		return $n;
+			$sql = $sql->fetch();
+			return $sql['c'];
+
+		}else {
+			return 0;
+		}
+
+		
 	}
 }
 
